@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite';
 
-// Allows overriding base for GitHub Pages via env var VITE_BASE (e.g. "/repo-name/")
-// Defaults to "/" which works for Netlify, Vercel and custom domains.
+// GitHub Pages Project URL: https://IchigoVal.github.io/hebammeMarina/
+// Für andere Hoster (Cloudflare Pages / Custom Domain) bleibt base normalerweise "/".
 export default defineConfig({
-  base: process.env.VITE_BASE || '/',
+  base: process.env.VITE_BASE || '/hebammeMarina/',
 });
-
