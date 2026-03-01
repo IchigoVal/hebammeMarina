@@ -1161,10 +1161,20 @@ section[id] {
   border-top: 1px solid rgba(90, 55, 30, 0.12);
 }
 
+.footer-shell {
+  display: grid;
+  gap: 0;
+}
+
 .footer-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
-  gap: 24px;
+  grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  justify-content: center;
+  column-gap: clamp(18px, 3vw, 34px);
+  row-gap: 18px;
   padding-block: 24px;
   align-items: start;
 }
@@ -1233,11 +1243,14 @@ section[id] {
 .copy {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  text-align: left;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
   color: #765b4b;
   font-size: 0.9rem;
-  padding: 12px 0 20px;
+  padding: 12px 10px 20px;
   border-top: 1px dashed rgba(80, 47, 24, 0.18);
 }
 
@@ -1248,8 +1261,7 @@ section[id] {
   }
 
   .copy {
-    justify-content: center;
-    text-align: center;
+    max-width: 640px;
   }
 }
 

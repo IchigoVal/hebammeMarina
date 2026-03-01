@@ -257,32 +257,34 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-column footer-contact">
-          <h4 data-i18n="footer.contact">Kontakt</h4>
-          <address class="footer-address">
-            <span data-i18n="common.person_name">Marina Rimmer</span>
-            <span>Wolframs-Eschenbacherstraße 39</span>
-            <span>90449, Nürnberg</span>
-          </address>
-          <p class="footer-contact-links">
-            <a href="tel:+49123456789">+49 123 456 789</a>
-            <a href="mailto:marina@gmail.com">marina@gmail.com</a>
-          </p>
-          <p class="footer-note" data-i18n="footer.availability_text">Hausbesuche nach Vereinbarung</p>
+      <div class="container footer-shell">
+        <div class="footer-grid">
+          <div class="footer-column footer-contact">
+            <h4 data-i18n="footer.contact">Kontakt</h4>
+            <address class="footer-address">
+              <span data-i18n="common.person_name">Marina Rimmer</span>
+              <span>Wolframs-Eschenbacherstraße 39</span>
+              <span>90449, Nürnberg</span>
+            </address>
+            <p class="footer-contact-links">
+              <a href="tel:+49123456789">+49 123 456 789</a>
+              <a href="mailto:marina@gmail.com">marina@gmail.com</a>
+            </p>
+            <p class="footer-note" data-i18n="footer.availability_text">Hausbesuche nach Vereinbarung</p>
+          </div>
+          <div class="footer-column footer-legal">
+            <h4 data-i18n="footer.legal">Rechtliches</h4>
+            <nav class="footer-legal-nav" aria-label="Rechtliches" data-i18n="footer.legal" data-i18n-mode="attr:aria-label">
+              <ul class="footer-legal-list">
+                <li><a href="#" data-i18n="footer.imprint">Impressum</a></li>
+                <li><a href="#" data-i18n="footer.privacy">Datenschutz</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="footer-column footer-legal">
-          <h4 data-i18n="footer.legal">Rechtliches</h4>
-          <nav class="footer-legal-nav" aria-label="Rechtliches" data-i18n="footer.legal" data-i18n-mode="attr:aria-label">
-            <ul class="footer-legal-list">
-              <li><a href="#" data-i18n="footer.imprint">Impressum</a></li>
-              <li><a href="#" data-i18n="footer.privacy">Datenschutz</a></li>
-            </ul>
-          </nav>
+        <div class="copy">
+          © <span id="year"></span> <span data-i18n="common.person_name">Marina Rimmer</span>. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span>
         </div>
-      </div>
-      <div class="copy">
-        © <span id="year"></span> <span data-i18n="common.person_name">Marina Rimmer</span>. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span>
       </div>
     </footer>
 
