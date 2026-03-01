@@ -1163,22 +1163,78 @@ section[id] {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  padding-block: 30px;
+  grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
+  gap: 24px;
+  padding-block: 24px;
+  align-items: start;
 }
 
 .footer-grid h4 {
-  margin: 0 0 8px;
+  margin: 0;
+  font-size: 1rem;
 }
 
-.footer-grid p,
-.footer-grid a {
+.footer-column {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.footer-address {
+  margin: 0;
+  display: grid;
+  gap: 2px;
+  font-style: normal;
+  line-height: 1.6;
   color: #6d4f3e;
 }
 
+.footer-contact-links {
+  margin: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.footer-note {
+  margin: 0;
+  color: #765b4b;
+  font-size: 0.94rem;
+}
+
+.footer-contact-links a,
+.footer-legal-list a {
+  color: #6d4f3e;
+  text-decoration: underline;
+  text-decoration-color: rgba(109, 79, 62, 0.28);
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.footer-contact-links a:hover,
+.footer-legal-list a:hover,
+.footer-contact-links a:focus-visible,
+.footer-legal-list a:focus-visible {
+  opacity: 0.88;
+  text-decoration-color: rgba(109, 79, 62, 0.5);
+}
+
+.footer-legal-nav {
+  display: block;
+}
+
+.footer-legal-list {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
 .copy {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
   color: #765b4b;
   font-size: 0.9rem;
   padding: 12px 0 20px;
@@ -1188,6 +1244,12 @@ section[id] {
 @media (max-width: 820px) {
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .copy {
+    justify-content: center;
+    text-align: center;
   }
 }
 
